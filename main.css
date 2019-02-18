@@ -1,0 +1,195 @@
+
+
+/* import the fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+body{
+	font-family: 'Roboto Condensed';
+	text-transform: uppercase;
+	background: white;
+	margin: auto;
+}
+
+h1{
+	font-size: 30px;
+	text-align: Center;
+	padding-left: 10px;
+}
+
+.layer{
+	display: block;
+	/* the following two css selectors aren't recognized by all browsers -- you may need to use some -webkit- prefixes */
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* let's create some styling to smooth out the transition when we hover over the body of the page */
+	transition: transform .4s;
+	transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+	transform-style: preserve-3d;
+}
+
+.layer ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+.layer li {
+    display: block;
+    margin: auto;
+    float: left;
+    align-content: center;
+
+}
+
+.layer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 27px;
+    text-decoration: none;
+
+}
+
+/* Change the link color on hover */
+
+ol {
+	text-align: left;
+	margin: auto;
+	width: 100px;
+	border-left: 5px solid #4CAF50;
+	padding-right: 50px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+ol li {
+	width: 50px;
+	margin: auto;
+}
+
+ol:hover {
+	border-left:black 5px solid;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.layer li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: #4CAF50;
+    border-bottom: 6px lightgreen solid;
+} 
+
+.front,  {
+	background: white;
+	width: 500px;
+	margin: auto;
+	text-align: left;	
+}
+
+
+
+
+/* this next line of CSS creates the animation that occurs when we hover over the page. it uses transform to change the perspective, scale, and positioning of the .front section to reveal the new nav hiding beneath it */
+
+/*body div:hover.front {
+	transform: perspective(800px) scale(1.0) translateX(-20%) rotateY(0deg);
+	/* hover over the text to check out the effect! 
+}
+*/
+
+/*div.front:hover {
+    
+    transition: transform 1s;
+    border-left: 5px solid black;
+}*/
+
+div.img {
+    margin: auto;
+	border-left: 5px solid #4CAF50;
+	padding-left: 10px;
+    width: 400px;
+}
+
+.me {
+	display: block;
+	border-radius: 100px;
+	width: 200px;
+	margin: auto;
+}
+
+.me:hover {
+    transition: transform 1.5s;
+    transform: perspective(800px) scale(1.0) translateX(0px) rotate(0deg);
+    border: solid 5px #4CAF50;
+    
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.img img:hover {
+	border: 2px solid lightgreen;
+	transition: transform 1s;
+    transform: perspective(800px) scale(1.00) translateX(0px) rotate(0deg);
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    margin: auto;
+    float: left;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.footerdiv {
+	margin: auto;
+	margin-top: 100px;
+	width: 150px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.socialmedia {
+	display: block;
+	padding: 10px;
+	margin: auto;
+	width:40px;
+	text-decoration: none;
+	float: left;
+}
+
+.socialmedia:hover {
+	display: inline;
+	transition: transform 1.5s;
+	transform: perspective(800px) scale(1.1) translateX(0px) rotate(360deg);
+	background-color: none;
+	float: left;
+}

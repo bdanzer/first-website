@@ -1,0 +1,20 @@
+@media screen and (min-width: 480px) {
+.front {
+	width: 50%;
+	float: left
+}
+
+}
+
+@media screen and (min-width: 660px) {
+#image {
+	width: 30%;
+	float: right;
+}
+
+#main, .center {
+	width: 30%;
+	float: left;
+}
+
+}
